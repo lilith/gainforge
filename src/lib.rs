@@ -252,9 +252,9 @@ pub use gain_image::{BufferStore, GainImage, GainImageMut};
 pub use gamma::TransferFunction;
 #[cfg(feature = "uhdr")]
 pub use iso_gain_map::{
-    make_gainmap_weight, IsoGainMap, MpfDataType, MpfEndianness, MpfEntry, MpfImageType, MpfInfo,
-    MpfNumberOfImages, MpfTag, UhdrDirectory, UhdrDirectoryContainer, UhdrDirectoryRdf,
-    UhdrDirectorySeq, UhdrItem, UhdrItemContainerLi, UhdrItemResource,
+    make_gainmap_weight, GainLUT, GainMap, IsoGainMap, MpfDataType, MpfEndianness, MpfEntry,
+    MpfImageType, MpfInfo, MpfNumberOfImages, MpfTag, UhdrDirectory, UhdrDirectoryContainer,
+    UhdrDirectoryRdf, UhdrDirectorySeq, UhdrItem, UhdrItemContainerLi, UhdrItemResource,
 };
 pub use mappers::{AgxCustomLook, AgxLook, ToneMappingMethod};
 use num_traits::{Float, Num};

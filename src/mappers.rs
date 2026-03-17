@@ -509,7 +509,7 @@ impl<const CN: usize> ToneMap for ReinhardJodieToneMapper<CN> {
 
             chunk[0] = lerp(chunk[0] * luma_scale, tv_r, tv_r).min(1f32);
             chunk[1] = lerp(chunk[1] * luma_scale, tv_g, tv_g).min(1f32);
-            chunk[2] = lerp(chunk[1] * luma_scale, tv_b, tv_b).min(1f32);
+            chunk[2] = lerp(chunk[2] * luma_scale, tv_b, tv_b).min(1f32);
         }
     }
 
